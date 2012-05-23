@@ -1,0 +1,84 @@
+@charset "UTF-8";
+/* Pedro Rodriguez's CSS Document. 
+*/
+
+body {
+	width: 800px;
+	margin: 1.5em auto; /* this + a defined width, centers the body content */	
+	font-family:Arial, Helvetica, sans-serif;
+	
+}
+	
+h1 {
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    text-align: center;
+    color: #000;
+	font-size: 40pt;
+}
+
+h2 {
+ 
+}
+
+h3 {
+    
+}
+
+img {
+    
+}
+
+a {
+   
+}
+
+a:hover {
+	
+}
+
+a:visited {
+    
+}
+
+a:active {
+    
+}
+
+#nav {
+    list-style: none;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#nav li{
+    display: inline;
+    margin: 10px;
+    padding: 2px;
+}
+
+#nav a {
+	text-decoration: none;
+	color: #000;	
+}
+#nav a:hover {
+	text-decoration: none;
+	color: #FFF;
+	background-color:#000000;
+}
+
+#nav p {
+	float:right
+}
+
+#sidebar {
+	float: right;
+}
+
+li{
+	list-style: none;
+}
+
+#footer {
+}
