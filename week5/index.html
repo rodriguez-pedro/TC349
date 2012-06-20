@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>My Bootstrap ToDo List</title>
+    
+<!-- Mobile viewport optimized: h5bp.com/viewport -->
+	  <meta name="viewport" content="width=device-width">
+
+<!-- Main stylesheet imports bootstrap css and adds custom -->
+    <link href="css/style.css" rel="stylesheet">
+    
+    <style>
+    	/* To keep short panes open decently tall */
+    	.tab-pane {min-height: 150px;}
+    </style>
+
+<!-- Modernizr for browser feature-checking 
+			+ HTML5shiv (included in modernizr) see modernizr.com -->
+  	<script src="js/modernizr-2.5.3.min.js"></script>
+
+<!-- Fav and touch icons -->
+		<!-- alternatively, remove these lines and place icons
+				directly in the site parent folder 
+				mathiasbynens.be/notes/touch-icons -->
+    <link rel="shortcut icon" href="img/favicon.ico">
+    <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/apple-touch-icon-114x114.png">
+    
+  </head>
+
+  <body data-spy="scroll" data-target=".subnav" data-offset="400">
+
+<!-- --------------NAVIGATION BAR----------------- -->
+
+    <div class="navbar navbar-fixed-top">
+		  <div class="navbar-inner">
+		    <div class="container">
+		      <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		      </a>
+		      <a class="brand" href="index.html">My ToDo List</a>
+		      <div class="nav-collapse">
+		        <ul class="nav">
+		          <li class="active"><a href="index.html">Current</a></li>
+		          <li><a href="#">Finished</a></li>
+		          <li><a href="#">About</a></li>
+		          <li><a href="#">Settings</a></li>
+		        </ul>
+		        	<a class="btn btn-primary pull-right" href="http://twitter.github.com/bootstrap/"><b class="icon-home icon-white"></b> Twitter Bootstrap Home</a>
+		      </div><!-- /.nav-collapse -->
+		    </div><!-- /.container -->
+		  </div><!-- /navbar-inner -->
+		</div><!-- /navbar -->
+		
+        
+        <div class="container">
+        
+        
+
+        <!-- Masthead
+================================================== -->
+
+	<div class="subnav subnav-fixed">
+  		<ul class="nav nav-pills">
+  			<li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Shopping <b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                   <li><a href="#homeShopping">Home</a></li>
+                   <li><a href="#groceryShopping">Grocery</a></li>
+                   <li><a href="#sewingShopping">Sewing</a></li>
+                </ul>
+             </li>
+             
+             <li class="dropdown">
+             <a class="dropdown-toggle" data-toggle="dropdown" href="#">Homework <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                      <li><a href="#webDesign">TC 349 Web Design</a></li>
+                      <li><a href="#interactiveMedia">TC 331 Interactive Media</a></li>
+                    </ul>
+              </li> 
+                 
+              <li><a href="#personal">Personal</a></li>
+              <li><a href="#moving">Moving</a></li>
+        </ul>
+   </div>
+	
+        
+		
+
+<!-- Home Shopping
+================================================== -->		    
+		    <section id="homeShopping">
+  			<div class="page-header">
+   				 <h3>Home Shopping <small>For all the things I need around the house</small></h3>
+  			</div>
+		    		<div class="row">
+							<div class="tabbable tabs-left span12">
+								<ul class="nav nav-tabs span6">
+									<li class=""><a href="#tabs1-pane1" data-toggle="tab">										
+                                    	<blockquote class="">
+                                    		<p>spray bleach</p><small>for cabniets</small>
+                                        </blockquote>
+                                    </a></li>
+                                    
+                                    <li class=""><a href="#tabs1-pane2" data-toggle="tab">
+                                    	<blockquote class="">
+                                    		<p>Garbage can</p><small>for bedroom</small>
+                                        </blockquote>
+                                    </a></li>
+                        
+                                    <li class=""><a href="#tabs1-pane3" data-toggle="tab">
+                                    	<blockquote class="">
+                                    		<p>Towel Loop</p><small>for bathroom</small>
+                                        </blockquote>
+                                    </a></li>
+                                    
+                                    <li class=""><a href="#tabs1-pane4" data-toggle="tab">
+                                    	<blockquote class="">
+                                    		<p>Pressure Fit Bar</p><small>for kitchen</small>
+                                        </blockquote>
+                                    </a></li>
+                                    
+                                    <li class=""><a href="#tabs1-pane5" data-toggle="tab">
+                                    	<blockquote class="">
+                                    		<p>Vaccum</p><small>need to research</small>
+                                        </blockquote>
+                                    </a></li>
+								</ul>
+                                
+								<div class="tab-content span4">
+									<div class="tab-pane" id="tabs1-pane1">
+										<h4>pick up with groceries</h4>
+										<p></p>
+                                        <button class="btn btn-success" type="submit">
+  											Finished
+										</button>
+									</div>
+                                    <div class="tab-pane" id="tabs1-pane2">
+										<h4>pick up with gift cards</h4>
+										<p></p>
+                                        <button class="btn btn-success" type="submit">
+  											Finished
+										</button>
+									</div>
+                                    <div class="tab-pane" id="tabs1-pane3">
+										<h4>freestanding</h4>
+										<p>can't put holes in the wall</p>
+                                        <button class="btn btn-success" type="submit">
+  											Finished
+										</button>
+									</div>
+                                    <div class="tab-pane" id="tabs1-pane4">
+										<h4>And tea cup hooks too</h4>
+										<p>possibly included</p>
+                                        <button class="btn btn-success" type="submit">
+  											Finished
+										</button>
+									</div>
+                                    <div class="tab-pane" id="tabs1-pane5">
+										<h4>Need One Soon</h4>
+										<p></p>
+                                        <button class="btn btn-success" type="submit">
+  											Finished
+										</button>
+									</div>
+                                    
+								</div><!-- /.tab-content -->
+							</div><!-- /.tabbable -->
+						</div><!-- /.row -->
+           </section>
+
+<!-- Grocery Shopping
+================================================== -->		    
+		    <section id="groceryShopping">
+  			<div class="page-header">
+   				 <h3>Grocery Shopping</h3>
+  			</div>
+		    		<div class="row">
+							<div class="tabbable tabs-left span12">
+								<ul class="nav nav-tabs span6">
+                                
+									<li class=""><a href="#tabs2-pane1" data-toggle="tab">										
+                                    	<blockquote class="">
+                                    		<p>Basics</p><small>list</small>
+                                        </blockquote>
+                                    </a></li>
+                                    
+                                    <li class=""><a href="#tabs2-pane2" data-toggle="tab">
+                                    	<blockquote class="">
+                                    		<p>Produce</p><small>list</small>
+                                        </blockquote>
+                                    </a></li>
+                                    
+                                    <li class=""><a href="#tabs2-pane3" data-toggle="tab">
+                                    	<blockquote class="">
+                                    		<p>Meat</p><small>list</small>
+                                        </blockquote>
+                                    </a></li>
+                                    
+                                    <li class=""><a href="#tabs2-pane4" data-toggle="tab">
+                                    	<blockquote class="">
+                                    		<p>Coffee</p><small>something flavored</small>
+                                        </blockquote>
+                                    </a></li>
+                                    
+                                    <li class=""><a href="#tabs2-pane5" data-toggle="tab">
+                                    	<blockquote class="">
+                                    		<p>Papertowels</p><small>larger pack</small>
+                                        </blockquote>
+                                    </a></li>
+								</ul>
+                                
+								<div class="tab-content span4">
+									<div class="tab-pane" id="tabs2-pane1">
+										<h4>Bread, Milk</h4>
+										<p>eggs, bagels</p>
+                                        <button class="btn btn-success" type="submit">
+  											Finished
+										</button>
+									</div>
+                                    <div class="tab-pane" id="tabs2-pane2">
+										<h4>Apples, Bananas, lettuce, potatos</h4>
+										<p>Green Beans</p>
+                                        <button class="btn btn-success" type="submit">
+  											Finished
+										</button>
+									</div>
+                                    <div class="tab-pane" id="tabs2-pane3">
+										<h4>Pork, Chicken</h4>
+										<p>more gound beef</p>
+                                        <button class="btn btn-success" type="submit">
+  											Finished
+										</button>
+									</div>
+                                    <div class="tab-pane" id="tabs2-pane4">
+										<h4></h4>
+										<p>something on sale</p>
+                                        <button class="btn btn-success" type="submit">
+  											Finished
+										</button>
+									</div>
+                                    <div class="tab-pane" id="tabs2-pane5">
+										<h4></h4>
+										<p>8+ pack</p>
+                                        <button class="btn btn-success" type="submit">
+  											Finished
+										</button>
+									</div>
+                                    
+								</div><!-- /.tab-content -->
+							</div><!-- /.tabbable -->
+						</div><!-- /.row -->
+           </section>
+
+<!-- Sewing Shopping
+================================================== -->		    
+		    <section id="sewingShopping">
+  			<div class="page-header">
+   				 <h3>Sewing Shopping <small>Stuff Sarah Needs</small></h3>
+  			</div>
+		    		<div class="row">
+							<div class="tabbable tabs-left span12">
+								<ul class="nav nav-tabs span6">
+									<li class=""><a href="#tabs3-pane1" data-toggle="tab">										
+                                    	<blockquote class="">
+                                    		<p>Fabric</p><small>from: Joann's</small>
+                                        </blockquote>
+                                    </a></li>
+                                    
+                                    <li class=""><a href="#tabs3-pane2" data-toggle="tab">
+                                    	<blockquote class="">
+                                    		<p>Serger Part</p><small>to fix Serger</small>
+                                        </blockquote>
+                                    </a></li>
+								</ul>
+                                
+								<div class="tab-content span4">
+									<div class="tab-pane" id="tabs3-pane1">
+										<h4>Sarah needs to pick something out</h4>
+										<p></p>
+                                        <button class="btn btn-success" type="submit">
+  											Finished
+										</button>
+									</div>
+                                    <div class="tab-pane" id="tabs3-pane2">
+										<h4>Look up part number</h4>
+										<p>Pobably find it online</p>
+                                        <button class="btn btn-success" type="submit">
+  											Finished
+										</button>
+									</div>
+								</div><!-- /.tab-content -->
+							</div><!-- /.tabbable -->
+						</div><!-- /.row -->
+           </section>
+
+
+<!-- Web Design Homework
+================================================== -->		    
+		    <section id="webDesign">
+  			<div class="page-header">
+   				 <h3>Web Design Homework <small>Due on Tuesday nights</small></h3>
+  			</div>
+		    		<div class="row">
+							<div class="tabbable tabs-left span12">
+								<ul class="nav nav-tabs span6">
+									<li class=""><a href="#tabs4-pane1" data-toggle="tab">										
+                                    	<blockquote class="">
+                                    		<p>Twitter Bootstrap</p><small></small>
+                                        </blockquote>
+                                    </a></li>
+                                    
+                                    <li class=""><a href="#tabs4-pane2" data-toggle="tab">
+                                    	<blockquote class="">
+                                    		<p>Build html for final</p><small></small>
+                                        </blockquote>
+                                    </a></li>
+                                    
+                                    <li class=""><a href="#tabs4-pane3" data-toggle="tab">
+                                    	<blockquote class="">
+                                    		<p>Site Review</p><small>Chartbeat</small>
+                                        </blockquote>
+                                    </a></li>
+								</ul>
+                                
+								<div class="tab-content span4">
+									<div class="tab-pane" id="tabs4-pane1">
+										<h4>DONE !</h4>
+										<p></p>
+                                        <button class="btn btn-success" type="submit">
+  											Finished
+										</button>
+									</div>
+                                    <div class="tab-pane" id="tabs4-pane2">
+										<h4>HURRY</h4>
+										<p></p>
+                                        <button class="btn btn-success" type="submit">
+  											Finished
+										</button>
+									</div>
+                                    <div class="tab-pane" id="tabs4-pane3">
+										<h4>NO SERIUSLY HURRY UP</h4>
+										<p>spent too much time on this lab</p>
+                                        <button class="btn btn-success" type="submit">
+  											Finished
+										</button>
+									</div>
+								</div><!-- /.tab-content -->
+							</div><!-- /.tabbable -->
+						</div><!-- /.row -->
+           </section>
+
+
+<!-- Interactive Media homework
+================================================== -->		    
+		    <section id="interactiveMedia">
+  			<div class="page-header">
+   				 <h3>Interactive Media Homework <small>Due on Sunday nights</small></h3>
+  			</div>
+		    		<div class="row">
+							<div class="tabbable tabs-left span12">
+								<ul class="nav nav-tabs span6">
+									<li class=""><a href="#tabs5-pane1" data-toggle="tab">										
+                                    	<blockquote class="">
+                                    		<p>Forum Posts</p><small>Interview Questions</small>
+                                        </blockquote>
+                                    </a></li>
+                                    
+                                    <li class=""><a href="#tabs5-pane2" data-toggle="tab">
+                                    	<blockquote class="">
+                                    		<p>Group Work</p><small>Email Group</small>
+                                        </blockquote>
+                                    </a></li>
+                                    
+                                     <li class=""><a href="#tabs5-pane3" data-toggle="tab">
+                                    	<blockquote class="">
+                                    		<p>Group Evaluation</p><small>DUE WEND</small>
+                                        </blockquote>
+                                    </a></li>
+                                    <li class=""><a href="#tabs5-pane4" data-toggle="tab">
+                                    	<blockquote class="">
+                                    		<p>Mini-Project2</p><small>Finish ASAP</small>
+                                        </blockquote>
+                                    </a></li>
+								</ul>
+                                
+								<div class="tab-content span4">
+									<div class="tab-pane" id="tabs5-pane1">
+										<h4>wont take long</h4>
+										<p></p>
+                                        <button class="btn btn-success" type="submit">
+  											Finished
+										</button>
+									</div>
+                                    <div class="tab-pane" id="tabs5-pane2">
+										<h4>Review Professors Notes</h4>
+										<p>.</p>
+                                        <button class="btn btn-success" type="submit">
+  											Finished
+										</button>
+									</div>
+                                    <div class="tab-pane" id="tabs5-pane3">
+										<h4>Grade my team </h4>
+										<p>still the only person to touch the finished flash doc</p>
+                                        <button class="btn btn-success" type="submit">
+  											Finished
+										</button>
+									</div>
+                                    <div class="tab-pane" id="tabs5-pane4">
+										<h4> Try to Get done by Wend</h4>
+										<p></p>
+                                        <button class="btn btn-success" type="submit">
+  											Finished
+										</button>
+									</div>
+                                    
+								</div><!-- /.tab-content -->
+							</div><!-- /.tabbable -->
+						</div><!-- /.row -->
+           </section>
+           
+<!-- Personal List
+================================================== -->		    
+		    <section id="personal">
+  			<div class="page-header">
+   				 <h3>Personal List <small>For all the the other things that I need to do</small></h3>
+  			</div>
+		    		<div class="row">
+							<div class="tabbable tabs-left span12">
+								<ul class="nav nav-tabs span6">
+									<li class=""><a href="#tabs6-pane1" data-toggle="tab">										
+                                    	<blockquote class="">
+                                    		<p>Fix Car</p><small>call local dealership</small>
+                                        </blockquote>
+                                    </a></li>
+                                    
+                                    <li class=""><a href="#tabs6-pane2" data-toggle="tab">
+                                    	<blockquote class="">
+                                    		<p>Return Rented Textbooks </p><small>UPS</small>
+                                        </blockquote>
+                                    </a></li>
+								</ul>
+                                
+								<div class="tab-content span4">
+									<div class="tab-pane" id="tabs6-pane1">
+										<h4>Explain Warrenty Info</h4>
+										<p></p>
+                                        <button class="btn btn-success" type="submit">
+  											Finished
+										</button>
+									</div>
+                                    <div class="tab-pane" id="tabs6-pane2">
+										<h4>Print Return Label</h4>
+										<p></p>
+                                        <button class="btn btn-success" type="submit">
+  											Finished
+										</button>
+									</div>
+								</div><!-- /.tab-content -->
+							</div><!-- /.tabbable -->
+						</div><!-- /.row -->
+           </section>
+           
+           
+<!-- Moving List
+================================================== -->		    
+		    <section id="moving">
+  			<div class="page-header">
+   				 <h3>Moving List <small>For all the things we still need to move</small></h3>
+  			</div>
+		    	<div class="row">
+							<div class="tabbable tabs-left span12">
+								<ul class="nav nav-tabs span6">
+									<li class=""><a href="#tabs7-pane1" data-toggle="tab">										
+                                    	<blockquote class="">
+                                    		<p>Tv cabinet</p><small>At Sarah's</small>
+                                        </blockquote>
+                                    </a></li>
+                                    
+                                    <li class=""><a href="#tabs7-pane2" data-toggle="tab">
+                                    	<blockquote class="">
+                                    		<p>TV</p><small>At Sarah's</small>
+                                        </blockquote>
+                                    </a></li>
+                                    
+                                    <li class=""><a href="#tabs7-pane3" data-toggle="tab">
+                                    	<blockquote class="">
+                                    		<p>Boxfan</p><small>At Sarah's</small>
+                                        </blockquote>
+                                    </a></li>
+                                    
+                                    <li class=""><a href="#tabs7-pane4" data-toggle="tab">
+                                    	<blockquote class="">
+                                    		<p>Stud Finder</p><small>At Pedro's</small>
+                                        </blockquote>
+                                    </a></li>
+                                    
+                                    <li class=""><a href="#tabs7-pane5" data-toggle="tab">
+                                    	<blockquote class="">
+                                    		<p>Hope Chest</p><small>At Sarah's</small>
+                                        </blockquote>
+                                    </a></li>
+                                    <li class=""><a href="#tabs7-pane6" data-toggle="tab">
+                                    	<blockquote class="">
+                                    		<p>Night Stand</p><small>At Pedro's</small>
+                                        </blockquote>
+                                    </a></li>
+								</ul>
+                                
+								<div class="tab-content span4">
+									<div class="tab-pane" id="tabs7-pane1">
+										<h4>Need Roberto's van to move</h4>
+										<p></p>
+                                        <button class="btn btn-success" type="submit">
+  											Finished
+										</button>
+									</div>
+                                    <div class="tab-pane" id="tabs7-pane2">
+										<h4>Need Roberto's van to move</h4>
+										<p>.</p>
+                                        <button class="btn btn-success" type="submit">
+  											Finished
+										</button>
+									</div>
+                                    <div class="tab-pane" id="tabs7-pane3">
+										<h4>Need to find it</h4>
+										<p>possibly in the basement</p>
+                                        <button class="btn btn-success" type="submit">
+  											Finished
+										</button>
+									</div>
+                                    <div class="tab-pane" id="tabs7-pane4">
+										<h4>ask Berto where it is</h4>
+										<p></p>
+                                        <button class="btn btn-success" type="submit">
+  											Finished
+										</button>
+									</div>
+                                    <div class="tab-pane" id="tabs7-pane5">
+										<h4>upstairs</h4>
+										<p>.</p>
+                                        <button class="btn btn-success" type="submit">
+  											Finished
+										</button>
+									</div>
+                                    <div class="tab-pane" id="tabs7-pane6">
+										<h4>upstairs</h4>
+										<p>.</p>
+                                        <button class="btn btn-success" type="submit">
+  											Finished
+										</button>
+									</div>
+								</div><!-- /.tab-content -->
+							</div><!-- /.tabbable -->
+						</div><!-- /.row -->
+           </section>
+
+      <hr>
+
+      <footer>
+        <p>By Pedro Rodriguez with tutorial help from David Cochran of <a href="http://okwu.edu">Oklahoma Wesleyan University</a> and <a href="http://alittlecode.com/">aLittleCode.com</a> from <a href="http://webdesign.tutsplus.com/">webdesign.tutsplus.com</a>.</p>
+      </footer>
+
+
+    </div> <!-- .container -->
+
+<!-- ==============================================
+		 JavaScript below! 															-->
+
+<!-- jQuery via Google + local fallback, see h5bp.com -->
+	 <script src="js/jquery-1.7.1.min.js"></script>
+
+<!-- Bootstrap JS: compiled and minified -->
+    <script src="js/bootstrap.min.js"></script>
+
+<!-- Example plugin: Prettify -->
+    <script src="js/prettify/prettify.js"></script>
+    
+<!-- Initialize Scripts -->
+		<script>
+			// Activate Google Prettify in this page
+			addEventListener('load', prettyPrint, false);
+		
+			$(document).ready(function(){
+
+				// Add prettyprint class to pre elements
+					$('pre').addClass('prettyprint');
+								
+			}); // end document.ready
+		</script>
+
+  </body>
+</html>
