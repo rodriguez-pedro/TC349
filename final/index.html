@@ -1,116 +1,118 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>Pedro's Pc's</title>
-  </head>
-
-  <body>
-	<!-- ---------top nav bar---------- -->
-    <div class="navbar navbar-fixed-top">
-      <div class="navbar-inner">
-        <div class="container">
-          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </a>
-          <a class="brand" href="#">Pedro's PC's</a>
-          <div class="nav-collapse">
-            <ul class="nav">
-              <li class="active"><a href="#">Home</a></li>
-              <li><a href="custom.html">Custom Pc's</a></li>
-              <li><a href="parts.html">Parts</a></li>
-			  <li><a href="diy.html">D.I.Y. knowledge</a></li>
-            </ul>
-          </div><!--/.nav-collapse -->
-        </div>
-      </div>
-    </div>
-
-    <div class="container">
-
+	<head>
+		<meta charset="utf-8">
+		<title>Pedro's Pc's</title>
+        <link href="css/style.css" rel="stylesheet">
+		<link rel="stylesheet" href="css/nav.css">
+		<!--[if IE]>
+			<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+	</head>
+    
+	<body>
+    
+    
+    <div class="header">
     <h1> Pedro's Pc's </h1>
-<!-- ---------banner---------- -->
-<div id="banner">	
-    <div class="tabbable"> 
-		<ul class="nav nav-tabs">
-			<li><a href="#tab1" data-toggle="tab">Custom Pc's</a></li>
-			<li><a href="#tab2" data-toggle="tab">Parts</a></li>
-			<li><a href="#tab2" data-toggle="tab">D.I.Y. Knowledge</a></li>
-		</ul>
-		
-	<div class="tab-content">
-		<div class="tab-pane" id="tab1">
-			<ul>
-				<li>Gaming Pc's</li>
-				<li>Everyday Pc's</li>
-				<li>Workstation Pc's</li>
-			</ul>
-		</div>
-		<div class="tab-pane" id="tab2">
-			<ul>
-				<li>CPU's</li>
-				<li>Motherboards</li>
-				<li>GPUS/Videocards</li>
-				<li>Power Supplies</li>
-				<li>Harddrives</li>
-				<li>Optical Drives</li>
-				<li>Cases</li>
-				<li>Cooling Parts</li>
-				<li>Ram/ Memory</li>
-			</ul>
-		</div>
-		<div class="tab-pane" id="tab2">
-			<ul>
-				<li>Buyers Guide</li>
-				<li>...</li>
-				<li>...</li>
-			</ul>
-		</div>
-	</div>
-	</div>
-</div>
-
-<!-- -------------- sale area ------------------>
-
-<img></img>
-
-
-      
-<!-- -------------- footer ------------------>
-
-      <footer>
+    <img src="img/logo.png" alt="Pedro's Pc's" height="250"> 
+    
+    
+		<nav id="topNav">
+        	<ul>
+            	<li><a href="#" >Home</a></li>
+          		<li><a href="pc.html">Custom Pc's</a>
+                	<ul>
+                    	<li><a href="gaming.html">Gaming Pc's</a></li>
+                        <li class="last"><a href="everyday.html" >Everyday Pc's</a></li>
+                    </ul>        
+                </li>
+                
+                <li><a href="parts.html" title="Nav Link 1">Parts</a>
+                	<ul>
+                    	<li><a href="cpu.html">CPU's</a></li>
+                        <li><a href="motherboards.html">Motherboards</a></li>
+                        <li><a href="ram.html">Ram/Memory</a></li>
+                        <li><a href="gpu.html">Graphics Cards/GPUs</a></li>
+                        <li><a href="power.html">Power Supplies</a></li>
+                        <li class="last"><a href="hdd.html">Harddrives</a></li>
+                       
+                    </ul>
+                </li>
+                
+                <li class="last"><a href="guide.html">Buyer's Guide</a></li>
+          </ul>
+          
+        </nav>
+     </div>
+     
+        <div class="content">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+        
+        <hr>
+        <footer>
 		<img></img>
+        <div class="row">
 		<ul>
-			<li><h3>Products</h3>
+			<li class="span4"><h3>Products</h3>
 				<ul>
-					<li> Desktops </li>
-					<li> Parts </li>
-					<li> Configurator </li>
-				<ul>
+					<li> <a href="pc.html">Pc's</a> </li>
+					<li> <a href="parts.html">Parts</a> </li>
+				</ul>
 			</li>
 			
-			<li><h3>D.I.Y. Support</h3>
+			<li class="span4"><h3>D.I.Y. Support</h3>
 				<ul>
-					<li> Video Walkthroughs </li>
-					<li> Buyer's Guide </li>
-					<li> Professional Charts </li>
-				<ul>
+					<li><a href="guide.html"> Buyer's Guide </a> </li>
+					<li><a href="http://www.tomshardware.com/charts/">Professional Charts</a> </li>
+				</ul>
 			</li>
-			<li><h3>Contact</h3>
+			<li class="span4"><h3>Contact</h3>
 				<ul>
 					<li> Phone Number: 5175184744 </li>
 					<li> Address: 1234 BLah Ave. </li>
 					<li> Hours: Only Wed 5:14 - 7:32</li>
-				<ul>
+				</ul>
 			</li>
+          </ul>
+         </div>
 			
         <p>&copy; Pedro PC's 2012</p>
       </footer>
+      
+      
+      
+        </div>
+     
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/jquery.js"></script>
+        <script src="js/modernizr.js"></script>
+		
+        <!-- nav jquery scripts ----->
+		<script>
+			(function($){
+				
+				//cache nav
+				var nav = $("#topNav");
+				
+				//add indicator and hovers to submenu parents
+				nav.find("li").each(function() {
+					if ($(this).find("ul").length > 0) {
+						$("<span>").text("^").appendTo($(this).children(":first"));
 
-    </div> <!-- /container -->
-
-
-  </body>
+						//show subnav on hover
+						$(this).mouseenter(function() {
+							$(this).find("ul").stop(true, true).slideDown();
+						});
+						
+						//hide submenus on exit
+						$(this).mouseleave(function() {
+							$(this).find("ul").stop(true, true).slideUp();
+						});
+					}
+				});
+			})(jQuery);
+		</script>
+        
+	</body>
 </html>

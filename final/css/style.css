@@ -1,0 +1,48 @@
+@charset "utf-8";
+/* CSS Document */
+
+@import url('bootstrap.css');
+
+body{
+	background: #333;
+	color: #dbdbdb;
+}
+
+a{
+	color: #6FF;
+}
+
+.content {
+	margin: 20px;
+}
+a:hover {
+	color: #000;
+}
+.header {
+	background: #6a6a6a;
+	padding-top: -20px;
+	margin: 0px 20px;
+}
+.header h1{
+	text-indent: -9000px;
+	display: none;
+}
+.header img{
+	margin-left: 80px;
+}
+
+footer{
+	margin-top: -5px;
+}
+
+footer li{
+	list-style: none;
+}
+
+footer div{
+	padding: 0px;
+}
+.hero-unit {
+	margin: 15px 20px;
+}
+	
