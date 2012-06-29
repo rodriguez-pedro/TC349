@@ -8,20 +8,35 @@ body{
 	color: #dbdbdb;
 }
 
-a{
-	color: #6FF;
-}
-
 .content {
 	margin: 20px;
+}
+
+a{
+	color: #186c6c;
 }
 a:hover {
 	color: #000;
 }
+
+h2 {
+	color:#3c874c;
+}
+.hero-unit {
+	margin: 15px 20px;
+}
+.hero-unit h1 {
+	color: #ddb32f;
+}
+	
+
 .header {
 	background: #6a6a6a;
 	padding-top: -20px;
 	margin: 0px 20px;
+	-moz-border-radius:10px;
+	-webkit-border-radius:10px;
+	border-radius:10px;
 }
 .header h1{
 	text-indent: -9000px;
@@ -29,6 +44,7 @@ a:hover {
 }
 .header img{
 	margin-left: 80px;
+	display: block;
 }
 
 footer{
@@ -42,7 +58,5 @@ footer li{
 footer div{
 	padding: 0px;
 }
-.hero-unit {
-	margin: 15px 20px;
-}
+
 	
