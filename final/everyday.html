@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Pedro's Pc's</title>
+        <link href="css/style.css" rel="stylesheet">
+		<link rel="stylesheet" href="css/nav.css">
+		<!--[if IE]>
+			<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+	</head>
+    
+	<body>
+    
+    
+    <div class="header">
+    <h1> Pedro's Pc's </h1>
+    <img src="img/logo.png" alt="Pedro's Pc's" height="250"> 
+    
+    
+		<nav id="topNav">
+        	<ul>
+            	<li><a href="index.html" >Home</a></li>
+          		<li><a href="pc.html">Custom Pc's</a>
+                	<ul>
+                    	<li><a href="gaming.html">Gaming Pc's</a></li>
+                        <li class="last"><a href="#" >Everyday Pc's</a></li>
+                    </ul>        
+                </li>
+                
+                <li><a href="parts.html" title="Nav Link 1">Parts</a>
+                	<ul>
+                    	<li><a href="cpu.html">CPU's</a></li>
+                        <li><a href="motherboards.html">Motherboards</a></li>
+                        <li><a href="ram.html">Ram/Memory</a></li>
+                        <li><a href="gpu.html">Graphics Cards/GPUs</a></li>
+                        <li><a href="power.html">Power Supplies</a></li>
+                        <li class="last"><a href="hdd.html">Harddrives</a></li>
+                        
+                    </ul>
+                </li>
+                
+                <li class="last"><a href="guide.html">Buyer's Guide</a></li>
+          </ul>
+          
+        </nav>
+     </div>
+     
+        <div class="content">
+     
+     
+     <div class="hero-unit">
+       	 <h1>Everyday P.C's</h1>
+       	 <p>Buy a great home Pc</p>
+       </div>
+     
+            
+     
+     
+     <div class="row">
+        <div class="span4">
+          <h2>Basic Home PC</h2>
+          <img src="img/case (5).jpg"></img>
+          <ul>
+          	<li><strong> CPU : </strong>Athlon x4 640 2.8Ghz </li>
+            <li><strong> GPU : </strong>Radeon 5450 </li>
+            <li><strong> Memory : </strong>4Gb </li>
+            <li><strong> Hard Drive : </strong>500Gb</li>
+          </ul> 
+          <h2> &#36; 349 </h2>
+        </div>
+        <div class="span4">
+          <h2>Multi-Tasking Home PC</h2>
+          <img src="img/case (6).jpg"></img>
+          <ul>
+          	<li><strong> CPU : </strong>Core i3 2100 </li>
+            <li><strong> GPU : </strong>Intel 3000HD </li>
+            <li><strong> Memory : </strong> 8Gb </li>
+            <li><strong> Hard Drive : </strong>1Tb </li>
+          </ul> 
+          <h2> &#36; 449 </h2>
+        </div>
+        <div class="span4">
+          <h2>Media Creation Home PC</h2>
+          <img src="img/case (4).jpg"></img>
+          <ul>
+          	<li><strong> CPU : </strong>A8-3870k</li>
+            <li><strong> GPU : </strong> Radeon 6500HD</li>
+            <li><strong> Memory : </strong>8Gb </li>
+            <li><strong> Hard Drive : </strong>64Gb SSD + 500Gb </li>
+          </ul> 
+          <h2> &#36; 549 </h2>
+        </div>
+      </div> 
+        
+        
+        <hr>
+        <footer>
+		<img></img>
+        <div class="row">
+		<ul>
+			<li class="span4"><h3>Products</h3>
+				<ul>
+					<li> <a href="pc.html">Pc's</a> </li>
+					<li> <a href="parts.html">Parts</a> </li>
+				</ul>
+			</li>
+			
+			<li class="span4"><h3>D.I.Y. Support</h3>
+				<ul>
+					<li><a href="guide.html"> Buyer's Guide </a> </li>
+					<li><a href="http://www.tomshardware.com/charts/">Professional Charts</a> </li>
+				</ul>
+			</li>
+			<li class="span4"><h3>Contact</h3>
+				<ul>
+					<li> Phone Number: 5175184744 </li>
+					<li> Address: 1234 BLah Ave. </li>
+					<li> Hours: Only Wed 5:14 - 7:32</li>
+				</ul>
+			</li>
+          </ul>
+         </div>
+			
+        <p>&copy; Pedro PC's 2012</p>
+      </footer>
+      
+      
+        </div>
+     
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/jquery.js"></script>
+        <script src="js/modernizr.js"></script>
+		
+        <!-- nav jquery scripts ----->
+		<script>
+			(function($){
+				
+				//cache nav
+				var nav = $("#topNav");
+				
+				//add indicator and hovers to submenu parents
+				nav.find("li").each(function() {
+					if ($(this).find("ul").length > 0) {
+						$("<span>").text("^").appendTo($(this).children(":first"));
+
+						//show subnav on hover
+						$(this).mouseenter(function() {
+							$(this).find("ul").stop(true, true).slideDown();
+						});
+						
+						//hide submenus on exit
+						$(this).mouseleave(function() {
+							$(this).find("ul").stop(true, true).slideUp();
+						});
+					}
+				});
+			})(jQuery);
+		</script>
+        
+	</body>
+</html>
